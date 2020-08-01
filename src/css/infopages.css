@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+
+body {
+  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
