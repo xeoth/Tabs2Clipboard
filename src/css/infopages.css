@@ -3,17 +3,29 @@
 body {
   font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   background-color: #dddddd;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  text-align: center;
 }
 
-h1 {
+h2 {
+  font-size: 2em;
   margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 h3 {
   font-size: 1.5em;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.gh-buttons {
+  display: inline;
+}
+
+p {
+  margin-left: 30%;
+  margin-right: 30%;
 }
