@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
 }
 
 h1 {
@@ -21,13 +22,20 @@ img {
 button {
   border: none;
   border-radius: 5px;
-  padding: 10px 23px;
+  padding: 10px 60px;
   transition: 0.2s;
 }
 
 span.btn-text {
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
+}
+
+div#bottom-info {
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.75em;
 }
 
 button#copy-btn {
