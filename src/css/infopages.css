@@ -7,6 +7,8 @@ body {
   /* flex-direction: column; */
   /* align-items: center; */
   text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 h2 {
@@ -23,9 +25,4 @@ h3 {
 
 .gh-buttons {
   display: inline;
-}
-
-p {
-  margin-left: 30%;
-  margin-right: 30%;
 }

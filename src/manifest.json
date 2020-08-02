@@ -11,14 +11,8 @@
     "default_title": "Save all tabs to clipboard"
   },
   "icons": {
-    "48": "assets/icon.svg",
-    "96": "assets/icon.svg"
+    "48": "assets/blue-icon.svg",
+    "96": "assets/blue-icon.svg"
   },
-  "permissions": ["tabs", "clipboardRead"],
-  "optional_permissions": [
-    "clipboardWrite",
-    "clipboardRead",
-    "clipboard-write"
-  ],
-  "content_security_policy": "script-src 'self' https://buttons.github.io; object-src 'none';"
+  "permissions": ["tabs", "clipboardRead", "clipboardWrite"]
 }
