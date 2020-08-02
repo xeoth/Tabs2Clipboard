@@ -12,7 +12,8 @@ const copyAllTabURLs = () => {
 const openAllClipboardTabs = async () => {
   const clipboardContent = await navigator.clipboard.readText();
 
-  const tabURLs = clipboardContent.split("\r\n");
+  const tabURLs = clipboardContent.split(/\r?\n/);
+  console.log(tabURLs);
 
   tabURLs.forEach((tab) => {
     browser.tabs.create({
