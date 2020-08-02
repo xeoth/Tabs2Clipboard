@@ -1,0 +1,19 @@
+{
+  "name": "Tabs2Clipboard",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "web-ext build --source-dir src --overwrite-dest --artifacts-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeoth/Tabs2Clipboard.git"
+  },
+  "keywords": [],
+  "author": "Xeoth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xeoth/Tabs2Clipboard/issues"
+  },
+  "homepage": "https://github.com/Xeoth/Tabs2Clipboard#readme"
+}
