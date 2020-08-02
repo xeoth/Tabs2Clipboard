@@ -7,6 +7,8 @@ body {
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 h1 {
@@ -27,9 +29,14 @@ button {
   transition: 0.2s;
 }
 
+button.active {
+  scale: 105%;
+}
+
 span.btn-text {
   font-family: "Roboto", sans-serif;
   vertical-align: middle;
+  transition: 0.3s;
 }
 
 div#bottom-info {

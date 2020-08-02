@@ -14,6 +14,11 @@
     "48": "assets/icon.svg",
     "96": "assets/icon.svg"
   },
-  "permissions": ["clipboardWrite", "tabs", "clipboard-write"],
+  "permissions": ["tabs", "clipboardRead"],
+  "optional_permissions": [
+    "clipboardWrite",
+    "clipboardRead",
+    "clipboard-write"
+  ],
   "content_security_policy": "script-src 'self' https://buttons.github.io; object-src 'none';"
 }
