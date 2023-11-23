@@ -13,7 +13,6 @@ const openAllClipboardTabs = async () => {
   const clipboardContent = await navigator.clipboard.readText();
 
   const tabURLs = clipboardContent.split(/\r?\n/).filter((val) => (!val.startsWith("about:") && !val.startsWith("moz-extension") && val !== ""));
-  console.log(tabURLs);
 
   tabURLs.forEach((tab) => {
     browser.tabs.create({
