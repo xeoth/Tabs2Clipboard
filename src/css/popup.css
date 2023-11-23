@@ -69,7 +69,7 @@ button#open-btn:hover {
   grid-gap: 0.5em;
 }
 
-#newwin-button img {
+#newwin-btn img {
   transform: scale(1.45);
   min-height: auto;
 }
