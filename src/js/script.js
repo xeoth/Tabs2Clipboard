@@ -43,7 +43,7 @@ copyButton.addEventListener("click", (ev) => {
 openButton.addEventListener("click", (ev) => {
   openAllClipboardTabs();
 
-  runClickVisual(openButton, 750);
+  runClickVisual(openButton, 250);
 });
 
 newwinButton.addEventListener("click", async (ev) => {
