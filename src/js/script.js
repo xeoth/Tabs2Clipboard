@@ -12,8 +12,7 @@ const copyAllTabURLs = () => {
 const openAllClipboardTabs = async () => {
   const clipboardContent = await navigator.clipboard.readText();
 
-  const tabURLs = clipboardContent.split(/\r?\n/)
-  
+  const tabURLs = clipboardContent.split(/\r?\n/).filter((val) => (!val.startsWith("about:") && !val.startsWith("moz-extension") && val !== ""));
 
   tabURLs.forEach((tab) => {
     browser.tabs.create({
@@ -23,23 +22,37 @@ const openAllClipboardTabs = async () => {
   });
 };
 
+const runClickVisual = (button, timeout) => {
+  button.classList.add("active");
+  setTimeout(() => {
+    button.classList.remove("active");
+  }, timeout);
+};
+
 const copyButton = document.getElementById("copy-btn");
 const openButton = document.getElementById("open-btn");
+const newwinButton = document.getElementById("newwin-btn");
 
 copyButton.addEventListener("click", (ev) => {
   copyAllTabURLs();
 
-  copyButton.classList.add("active");
-  setTimeout(() => {
-    copyButton.classList.remove("active");
-  }, 200);
+  runClickVisual(copyButton, 250);
 });
 
 openButton.addEventListener("click", (ev) => {
   openAllClipboardTabs();
 
-  openButton.classList.add("active");
-  setTimeout(() => {
-    openButton.classList.remove("active");
-  }, 750);
+  runClickVisual(openButton, 250);
+});
+
+newwinButton.addEventListener("click", async (ev) => {
+  const clipboardContent = await navigator.clipboard.readText();
+  const tabURLs = clipboardContent.split(/\r?\n/).filter((val) => (!val.startsWith("about:") && !val.startsWith("moz-extension") && val !== ""));
+
+  browser.windows.create({
+    url: tabURLs,
+  });
+
+  runClickVisual(newwinButton, 250);
+  
 });

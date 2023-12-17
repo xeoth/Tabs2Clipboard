@@ -1,6 +1,6 @@
 {
   "name": "Tabs2Clipboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "scripts": {
     "build": "web-ext build --source-dir src --overwrite-dest --artifacts-dir build"
